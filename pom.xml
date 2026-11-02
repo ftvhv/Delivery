@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project xmlns="http://apache.org" xmlns:xsi="http://w3.org" xsi:schemaLocation="http://apache.org https://apache.org"> 
+    <modelVersion>4.0.0</modelVersion> 
+    <groupId>by.delivery</groupId> 
+    <artifactId>delivery-app</artifactId> 
+    <version>1.0-SNAPSHOT</version> 
+    <properties> 
+        <maven.compiler.release>17</maven.compiler.release> 
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
+        <junit.version>5.10.2</junit.version> 
+    </properties> 
+    <dependencies> 
+        <dependency> 
+            <groupId>org.junit.jupiter</groupId> 
+            <artifactId>junit-jupiter</artifactId> 
+            <version>${junit.version}</version> 
+            <scope>test</scope> 
+        </dependency> 
+    </dependencies> 
+    <build> 
+        <finalName>delivery-app</finalName> 
+        <plugins> 
+            <plugin> 
+                <groupId>org.apache.maven.plugins</groupId> 
+                <artifactId>maven-compiler-plugin</artifactId> 
+                <version>3.13.0</version> 
+            </plugin> 
+            <plugin> 
+                <groupId>org.apache.maven.plugins</groupId> 
+                <artifactId>maven-surefire-plugin</artifactId> 
+                <version>3.2.5</version> 
+            </plugin> 
+            <plugin> 
+                <groupId>org.apache.maven.plugins</groupId> 
+                <artifactId>maven-jar-plugin</artifactId> 
+                <version>3.4.2</version> 
+                <configuration> 
+                    <archive> 
+                        <manifest> 
+                            <mainClass>service.OrderService</mainClass> 
+                        </manifest> 
+                    </archive> 
+                </configuration> 
+            </plugin> 
+        </plugins> 
+    </build> 
+</project>
