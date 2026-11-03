@@ -1,4 +1,4 @@
-# trigger test comment
+// trigger test comment
 pipeline {
     agent any
 
