@@ -89,4 +89,18 @@ public class OrderServiceTest {
                 "Заказ на минимальную сумму должен быть принят"
         );
     }
+
+    @Test
+        public void fourthTest() {
+        OrderRepository repository = new InMemoryOrderRepository();
+        OrderService service = new OrderService(repository, 20);
+
+        Order order = new Order(
+                new Customer(2, "Ivan"),
+                List.of(new Dish("Burger", 20))
+        );
+
+        boolean result = service.createOrder(order);
+        assertTrue(result, "Заказ на минимальную сумму (20) должен быть принят");
+        }
 }
