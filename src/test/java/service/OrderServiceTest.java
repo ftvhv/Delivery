@@ -31,7 +31,7 @@ public class OrderServiceTest {
         boolean result =
                 service.createOrder(order);
 
-        assertFalse(
+        assertTrue(
                 result,
                 "Заказ с достаточной суммой должен быть принят"
         );
