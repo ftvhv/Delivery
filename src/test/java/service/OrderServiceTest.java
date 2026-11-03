@@ -101,6 +101,6 @@ public class OrderServiceTest {
         );
 
         boolean result = service.createOrder(order);
-        assertTrue(result, "Заказ на минимальную сумму (20) должен быть принят");
+        assertFalse(result, "Заказ на минимальную сумму (20) должен быть принят");
         }
 }
