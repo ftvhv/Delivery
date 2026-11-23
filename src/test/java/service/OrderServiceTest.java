@@ -1,9 +1,10 @@
-import model.Customer;
-import model.Dish;
-import model.Order;
-import repository.InMemoryOrderRepository;
-import repository.OrderRepository;
-import service.OrderService;
+package service;
+import by.delivery.model.Customer; 
+import by.delivery.model.Dish;
+import by.delivery.model.Order;
+import by.delivery.repository.InMemoryOrderRepository;
+import by.delivery.repository.OrderRepository;
+import by.delivery.service.OrderService;
 import org.junit.jupiter.api.Test;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;

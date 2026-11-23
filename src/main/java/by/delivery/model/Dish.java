@@ -1,4 +1,4 @@
-package model;
+package by.delivery.model;
 
 public class Dish {
 

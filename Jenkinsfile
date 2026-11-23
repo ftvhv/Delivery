@@ -19,6 +19,11 @@ pipeline {
                 bat 'D:\\maven\\bin\\mvn.cmd compile'
             }
         }
+        stage('Static Analysis') {
+            steps {
+                bat 'mvn checkstyle:check'
+            }
+        }
         stage('Test') {
             steps {
                 bat 'D:\\maven\\bin\\mvn.cmd test'

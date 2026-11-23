@@ -1,5 +1,5 @@
-package repository;
-import model.Order;
+package by.delivery.repository;
+import by.delivery.model.Order;
 import java.util.ArrayList;
 import java.util.List;
 

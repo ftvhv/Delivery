@@ -1,6 +1,6 @@
-package repository;
+package by.delivery.repository;
 
-import model.Order;
+import by.delivery.model.Order;
 
 public interface OrderRepository {
     void saveOrder(Order order);

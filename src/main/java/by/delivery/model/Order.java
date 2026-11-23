@@ -1,4 +1,4 @@
-package model;
+package by.delivery.model;
 import java.util.List;
 
 public class Order {
