@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.List;
 
 
-public class Order_Service {
+public class OrderService {
 
         private static final Logger logger = LoggerFactory.getLogger(OrderService.class); 
 
