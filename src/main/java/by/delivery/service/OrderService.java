@@ -22,19 +22,19 @@ public class OrderService {
     }
 
         public boolean createOrder(Order order) {
-        logger.info("Заказ оформлен для клиента: {}", order.getCustomer().getName());
+        logger.info("Zakaz oformlen dlya: {}", order.getCustomer().getName());
         
         try {
                 if (order.getTotalAmount() < minAmount) {
-                        logger.warn("Сумма заказа {} ниже минимальной ({})", order.getTotalAmount(), minAmount);
+                        logger.warn("Summa zakaza {} < min ({})", order.getTotalAmount(), minAmount);
                 return false;
                 }
                 
-                logger.info("Заказ успешно создан. ID: {}", order.getTotalAmount());
+                logger.info("Zakaz sozdan. Summa: {}", order.getTotalAmount());
                 return true;
                 
         } catch (Exception e) {
-                logger.error("Ошибка при создании заказа: {}", e.getMessage(), e);
+                logger.error("Oshibka zakaza: {}", e.getMessage(), e);
                 return false;
         }
         }
