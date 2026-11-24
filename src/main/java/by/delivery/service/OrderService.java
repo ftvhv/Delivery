@@ -7,7 +7,6 @@ import by.delivery.repository.OrderRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.util.List;
-import java.util.List;
 
 
 public class OrderService {
@@ -21,17 +20,6 @@ public class OrderService {
         this.repository = repository;
         this.minAmount = minAmount;
     }
-
-//     public boolean createOrder(Order order) {
-
-//         if (order.getTotalAmount() < minAmount) {
-//             return false;
-//         }
-
-//         repository.saveOrder(order);
-
-//         return true;
-//     }
 
         public boolean createOrder(Order order) {
         logger.info("Заказ оформлен для клиента: {}", order.getCustomer().getName());
